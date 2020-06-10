@@ -1,0 +1,113 @@
+body{
+    font-family: Tahoma;
+    color: #444;
+    letter-spacing: 1px;
+}
+h1, h2{
+    font-weight: normal;
+}
+.wrapper{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border: 2px solid;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    padding: 0 0 20px;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+}
+.header{
+    display: grid; 
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background: #eee;
+    padding: 10px;
+}
+
+.header > h1{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+.header > p {
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+}
+#search > input{
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: #444;
+    font-size: 16px;
+    padding: 8px;
+}
+#book-list{
+    /* display: grid;
+    grid-template-columns: 1fr;
+    justify-items: flex-start; */
+}
+#book-list > h2 {
+    /* border: 2px solid; */
+    margin: 30px 0 0 0;
+    padding: 0 10px;
+}
+#book-list > ul >li{
+    list-style-type: none;
+    margin: 30px;
+    padding: 10px;
+    font-size: 18px;
+    border-left: 5px solid #ddd;
+}
+.delete{
+    float: right;
+    border: 2px solid #9361bf;
+    background: #9361bf;
+    color: white;
+    border-radius: 3px;
+    padding: 2px;
+}
+.delete:hover{
+    background-color: seagreen;
+    border-color: seagreen;
+    cursor: pointer;
+}
+#book-list > ul >li:hover {
+    border-color: #9361bf;
+}
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+}
+.add > input {
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 7px;
+    width: 300px;
+    margin: 20px;
+    margin-right: 0;
+    /* margin-bottom: 30px; */
+}
+.btn-add{
+    padding: 7px;
+    font-size: 18px;
+    width: 80px;
+    margin-left: 0;
+    /* margin-bottom: 10px; */
+    border: 2px solid #9361bf;
+    border-radius: 4px;
+    background: #9361bf;
+    color: white;
+}
+.btn-add:hover{
+    background: seagreen;
+    cursor: pointer;
+    border-color: seagreen;
+}
