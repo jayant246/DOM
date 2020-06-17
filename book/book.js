@@ -113,27 +113,32 @@ addBTN.addEventListener('click', e =>{
     e.preventDefault();
     let val = document.querySelector('.add-book').value;
 
-    // create new Element
-    let li = document.createElement('li');
-    let del = document.createElement('span');
-    let name = document.createElement('span');
+    if(val !== ""){
+    	// create new Element
+	    let li = document.createElement('li');
+	    let del = document.createElement('span');
+	    let name = document.createElement('span');
 
-    // set value to newly created element
-    del.textContent = "delete";
-    name.textContent = val;
+	    // set value to newly created element
+	    del.textContent = "delete";
+	    name.textContent = val;
 
-    // add class to newly created element
-    del.classList.add("delete");
-    
-    // append
+	    // add class to newly created element
+	    del.classList.add("delete");
+	    
+	    // append
 
-    li.appendChild(name);
-    li.appendChild(del);
-    list.appendChild(li);
-    // clear adding input
+	    li.appendChild(name);
+	    li.appendChild(del);
+	    list.appendChild(li);
+	    // clear adding input
 
-    let inputBar = document.querySelector('.add-book');
-    inputBar.value = "";
+	    let inputBar = document.querySelector('.add-book');
+	    inputBar.value = "";
+    }
+    else{
+    	alert("Can't add empty string");
+    }
 })
 
 // hide or show books

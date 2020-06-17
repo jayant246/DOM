@@ -118,6 +118,7 @@ h1, h2{
     border-radius: 4px;
     background: #9361bf;
     color: white;
+    outline: none;
 }
 .btn-add:hover{
     background: seagreen;
